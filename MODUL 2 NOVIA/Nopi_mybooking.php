@@ -1,6 +1,6 @@
 <?php 
     $name = $_POST['name'];
-    $date = $_POST['date'];
+    $date = $_GET['date'];
     $time = $_POST['start'];
     $masuk = date('d-m-yy', strtotime($date)) ." ". date('H:i:s');
     $duration = $_POST['duration'];
@@ -57,7 +57,7 @@
             <tb>
               <tr>
                 <td><?php echo rand();?></td>
-                <td><?php echo $name;?></td>
+                <td><?php echo $nama;?></td>
                 <td><?php echo $masuk;?></td>
                 <td><?php echo $keluar;?></td>
                 <td> 
@@ -91,7 +91,7 @@
                 </td>
 
                 <td>
-                    <?php echo 'Rp.' . ($jumlah+$harga_service)?>
+                    <?php echo 'Rp.' . ($jumlah+$harga_services)?>
                     
                     
                 </td>
